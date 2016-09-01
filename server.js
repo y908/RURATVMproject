@@ -39,7 +39,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new GitHubStrategy({
   clientID: GITHUB_CLIENT_ID,
   clientSecret: GITHUB_CLIENT_SECRET,
-  callbackURL: 'https://infinite-fjord-68175.herokuapp.com/'
+  callbackURL: 'http://infinite-fjord-68175.herokuapp.com/auth/github/callback'
 }, function(accessToken, refreshToken, profile, done) {
   process.nextTick(function() {
     return done(null, profile);
