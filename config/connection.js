@@ -17,10 +17,10 @@ var keys = require('../keys.js');
 
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'd6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-  user     : 'n0kvsf4ou0obe3o4',
+  host     : 'uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user     : 'ji80bdlykqn42qkb',
   password : keys.importantKeys.jawsDBpassword,
-  database : 'nze8kwnmv806oiw8'
+  database : 'exnmj3eyw1316of0'
 });
 
 connection.connect(function (err) {
