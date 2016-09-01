@@ -8,7 +8,7 @@
 
 
 // !!!!!!!!!!!!!!!! the below code has an error
-var keys = require('./keys.js');
+
 var stripe = require("stripe")(process.env.skLiveKey);
 
 app.post('/charge', function(req,res){
