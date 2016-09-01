@@ -19,7 +19,7 @@ var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
   user     : 'ji80bdlykqn42qkb',
-  password : keys.importantKeys.jawsDBpassword,
+  password : process.env.jawsDBpassword,
   database : 'exnmj3eyw1316of0'
 });
 
